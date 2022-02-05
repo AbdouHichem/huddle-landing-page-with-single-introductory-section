@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url(../fontawesome-free-5.15.4-web/scss/_mixins.scss);
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +35,8 @@ body {
           flex-direction: column;
 }
 
-header, main {
+header,
+main {
   width: 100%;
   max-width: 350px;
 }
@@ -123,5 +125,261 @@ main .social-icons span {
 main .social-icons span:hover {
   color: #e882e8;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  header,
+  main {
+    width: 100%;
+    max-width: 0100%;
+  }
+  header .logo {
+    width: 20%;
+    margin-top: 2em;
+    margin-left: 2em;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    text-align: start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .illustration {
+    padding: 2em;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  main .illustration img {
+    width: 100%;
+  }
+  main .row {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  main .row .details {
+    padding: 2em;
+    color: white;
+  }
+  main .row .details h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  main .row .details p {
+    padding: 1em 0;
+    font-size: .7em;
+  }
+  main .row .details button {
+    color: #674baf;
+    background-color: white;
+    padding: .5em 3em;
+    font-size: 1em;
+    margin-top: 1em;
+    border-radius: 5em;
+    border: 1px solid white;
+  }
+  main .row .details button:hover {
+    color: white;
+    background-color: violet;
+    border: 1px solid violet;
+    cursor: pointer;
+  }
+  main .row .social-icons {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2em 3em;
+  }
+  main .row .social-icons span {
+    color: white;
+  }
+  main .row .social-icons span:hover {
+    color: #e882e8;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header,
+  main {
+    width: 100%;
+    max-width: 0100%;
+  }
+  header .logo {
+    width: 20%;
+    margin-left: 2em;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    text-align: start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .illustration {
+    padding: 2em;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  main .illustration img {
+    width: 100%;
+  }
+  main .row {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  main .row .details {
+    padding: 2em;
+    color: white;
+  }
+  main .row .details h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  main .row .details p {
+    padding: 1em 0;
+    font-size: 1em;
+  }
+  main .row .details button {
+    color: #674baf;
+    background-color: white;
+    padding: .5em 3em;
+    font-size: 1.2em;
+    margin-top: 1em;
+    border-radius: 5em;
+    border: 1px solid white;
+  }
+  main .row .details button:hover {
+    color: white;
+    background-color: violet;
+    border: 1px solid violet;
+    cursor: pointer;
+  }
+  main .row .social-icons {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2em 3em;
+  }
+  main .row .social-icons span {
+    color: white;
+  }
+  main .row .social-icons span:hover {
+    color: #e882e8;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  header,
+  main {
+    width: 100%;
+    max-width: 0100%;
+  }
+  header .logo {
+    width: 20%;
+    margin-left: 2em;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    text-align: start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .illustration {
+    padding: 2em;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  main .illustration img {
+    width: 100%;
+  }
+  main .row {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  main .row .details {
+    padding: 2em;
+    color: white;
+  }
+  main .row .details h1 {
+    font-size: 3em;
+    font-weight: bold;
+  }
+  main .row .details p {
+    padding: 1em 0;
+    font-size: 1.2em;
+  }
+  main .row .details button {
+    color: #674baf;
+    background-color: white;
+    padding: .5em 3em;
+    font-size: 1.2em;
+    margin-top: 1em;
+    border-radius: 5em;
+    border: 1px solid white;
+  }
+  main .row .details button:hover {
+    color: white;
+    background-color: violet;
+    border: 1px solid violet;
+    cursor: pointer;
+  }
+  main .row .social-icons {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2em 3em;
+  }
+  main .row .social-icons span {
+    @export color: white;
+  }
+  main .row .social-icons span:hover {
+    color: #e882e8;
+    cursor: pointer;
+  }
 }
 /*# sourceMappingURL=style.css.map */

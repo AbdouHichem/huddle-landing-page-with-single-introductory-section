@@ -1,16 +1,18 @@
 @import "config";
 
+@import url(../fontawesome-free-5.15.4-web/scss/_mixins.scss);
+
 body {
   background-color: $Violet;
   min-height: 100vh;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
-header, main {
-    width:100%;
+header,
+main {
+  width: 100%;
   max-width: 350px;
 }
 header {
@@ -18,7 +20,7 @@ header {
 
   .bg-image {
     top: 0;
-    right:0;
+    right: 0;
     width: 100%;
     position: absolute;
     z-index: -1;
@@ -28,12 +30,10 @@ header {
     width: 40%;
     margin-top: 2em;
     margin-left: 2em;
-
   }
-
 }
 main {
-    width:340px;
+  width: 340px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,6 +77,233 @@ main {
       &:hover {
         color: $SoftMagenta;
         cursor: pointer;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  header,
+  main {
+    width: 100%;
+    max-width: 0100%;
+  }
+
+  header {
+    .logo {
+      width: 20%;
+      margin-top: 2em;
+      margin-left: 2em;
+    }
+  }
+  main {
+    display: flex;
+    align-items: start;
+    text-align: start;
+
+    flex-direction: row;
+
+    .illustration {
+      padding: 2em;
+      flex: 1;
+      img {
+        width: 100%;
+      }
+    }
+    .row {
+      flex: 1;
+      .details {
+        
+        padding: 2em;
+        color: white;
+        h1{
+          font-size:1.5em;
+          font-weight: bold;
+        }
+        p {
+          padding: 1em 0;
+          font-size: .7em;
+        }
+        button {
+          color: $Violet;
+          background-color: white;
+          padding: .5em 3em;
+          font-size: 1em;
+          margin-top: 1em;
+          border-radius: 5em;
+          border: 1px solid white;
+          &:hover {
+            color: white;
+            background-color: violet;
+            border: 1px solid violet;
+            cursor: pointer;
+          }
+        }
+      }
+      .social-icons {
+          
+        justify-content: flex-end;
+        align-items: flex-end;
+        display:flex;
+        padding: 2em 3em;
+
+        span {
+          color: white;
+          &:hover {
+            color: $SoftMagenta;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header,
+  main {
+    width: 100%;
+    max-width: 0100%;
+  }
+
+  header {
+    .logo {
+      width: 20%; 
+      margin-left: 2em;
+    }
+  }
+  main {
+    display: flex;
+    align-items: start;
+    text-align: start;
+    flex-direction: row;
+
+    .illustration {
+      padding: 2em;
+      flex: 1;
+      img {
+        width: 100%;
+      }
+    }
+    .row {
+      flex: 1;
+      .details {
+        
+        padding: 2em;
+        color: white;
+        h1{
+          font-size:2em;
+          font-weight: bold;
+        }
+        p {
+          padding: 1em 0;
+          font-size: 1em;
+        }
+        button {
+          color: $Violet;
+          background-color: white;
+          padding: .5em 3em;
+          font-size: 1.2em;
+          margin-top: 1em;
+          border-radius: 5em;
+          border: 1px solid white;
+          &:hover {
+            color: white;
+            background-color: violet;
+            border: 1px solid violet;
+            cursor: pointer;
+          }
+        }
+      }
+      .social-icons {
+          
+        justify-content: flex-end;
+        align-items: flex-end;
+        display:flex;
+        padding: 2em 3em;
+
+        span {
+          color: white;
+          &:hover {
+            color: $SoftMagenta;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  header,
+  main {
+    width: 100%;
+    max-width: 0100%;
+  }
+
+  header {
+    .logo {
+      width: 20%; 
+      margin-left: 2em;
+    }
+  }
+  main {
+    display: flex;
+    align-items: start;
+    text-align: start;
+    flex-direction: row;
+
+    .illustration {
+      padding: 2em;
+      flex: 1;
+      img {
+        width: 100%;
+      }
+    }
+    .row {
+      flex: 1;
+      .details {
+        
+        padding: 2em;
+        color: white;
+        h1{
+          font-size:3em;
+          font-weight: bold;
+        }
+        p {
+          padding: 1em 0;
+          font-size: 1.2em;
+        }
+        button {
+          color: $Violet;
+          background-color: white;
+          padding: .5em 3em;
+          font-size: 1.2em;
+          margin-top: 1em;
+          border-radius: 5em;
+          border: 1px solid white;
+          &:hover {
+            color: white;
+            background-color: violet;
+            border: 1px solid violet;
+            cursor: pointer;
+          }
+        }
+      }
+      .social-icons {
+          
+        justify-content: flex-end;
+        align-items: flex-end;
+        display:flex;
+        padding: 2em 3em;
+
+        span {
+        @export 
+          color: white;
+          &:hover {
+            color: $SoftMagenta;
+            cursor: pointer;
+          }
+        }
       }
     }
   }
