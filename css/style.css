@@ -15,4 +15,113 @@
 .attribution a {
   color: #3e52a3;
 }
+
+body {
+  background-color: #674baf;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header, main {
+  width: 100%;
+  max-width: 350px;
+}
+
+header {
+  position: relative;
+}
+
+header .bg-image {
+  top: 0;
+  right: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+header .logo {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  width: 40%;
+  margin-top: 2em;
+  margin-left: 2em;
+}
+
+main {
+  width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .illustration {
+  padding: 2em;
+}
+
+main .illustration img {
+  width: 100%;
+}
+
+main .details {
+  padding: 2em;
+  color: white;
+}
+
+main .details p {
+  padding: 1em;
+  font-size: 1em;
+}
+
+main .details button {
+  color: #674baf;
+  background-color: white;
+  padding: 1em 5em;
+  margin-top: 1em;
+  border-radius: 5em;
+  border: 1px solid white;
+}
+
+main .details button:hover {
+  color: white;
+  background-color: violet;
+  border: 1px solid violet;
+  cursor: pointer;
+}
+
+main .social-icons {
+  padding: 1em 0;
+}
+
+main .social-icons span {
+  color: white;
+}
+
+main .social-icons span:hover {
+  color: #e882e8;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */

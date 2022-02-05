@@ -1,1 +1,83 @@
 @import "config";
+
+body {
+  background-color: $Violet;
+  min-height: 100vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+header, main {
+    width:100%;
+  max-width: 350px;
+}
+header {
+  position: relative;
+
+  .bg-image {
+    top: 0;
+    right:0;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  .logo {
+    align-self: start;
+    width: 40%;
+    margin-top: 2em;
+    margin-left: 2em;
+
+  }
+
+}
+main {
+    width:340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+
+  .illustration {
+    padding: 2em;
+
+    img {
+      width: 100%;
+    }
+  }
+  .details {
+    padding: 2em;
+    color: white;
+    p {
+      padding: 1em;
+      font-size: 1em;
+    }
+    button {
+      color: $Violet;
+      background-color: white;
+      padding: 1em 5em;
+      margin-top: 1em;
+      border-radius: 5em;
+      border: 1px solid white;
+      &:hover {
+        color: white;
+        background-color: violet;
+        border: 1px solid violet;
+        cursor: pointer;
+      }
+    }
+  }
+  .social-icons {
+    padding: 1em 0;
+
+    span {
+      color: white;
+      &:hover {
+        color: $SoftMagenta;
+        cursor: pointer;
+      }
+    }
+  }
+}
