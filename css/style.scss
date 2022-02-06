@@ -113,21 +113,20 @@ main {
     .row {
       flex: 1;
       .details {
-        
         padding: 2em;
         color: white;
-        h1{
-          font-size:1.5em;
+        h1 {
+          font-size: 1.5em;
           font-weight: bold;
         }
         p {
           padding: 1em 0;
-          font-size: .7em;
+          font-size: 0.7em;
         }
         button {
           color: $Violet;
           background-color: white;
-          padding: .5em 3em;
+          padding: 0.5em 3em;
           font-size: 1em;
           margin-top: 1em;
           border-radius: 5em;
@@ -141,10 +140,9 @@ main {
         }
       }
       .social-icons {
-          
         justify-content: flex-end;
         align-items: flex-end;
-        display:flex;
+        display: flex;
         padding: 2em 3em;
 
         span {
@@ -168,7 +166,7 @@ main {
 
   header {
     .logo {
-      width: 20%; 
+      width: 20%;
       margin-left: 2em;
     }
   }
@@ -188,11 +186,10 @@ main {
     .row {
       flex: 1;
       .details {
-        
         padding: 2em;
         color: white;
-        h1{
-          font-size:2em;
+        h1 {
+          font-size: 2em;
           font-weight: bold;
           transition: all 0.2s ease;
         }
@@ -204,7 +201,7 @@ main {
         button {
           color: $Violet;
           background-color: white;
-          padding: .5em 3em;
+          padding: 0.5em 3em;
           font-size: 1.2em;
           margin-top: 1em;
           border-radius: 5em;
@@ -218,10 +215,9 @@ main {
         }
       }
       .social-icons {
-          
         justify-content: flex-end;
         align-items: flex-end;
-        display:flex;
+        display: flex;
         padding: 2em 3em;
 
         span {
@@ -245,7 +241,7 @@ main {
 
   header {
     .logo {
-      width: 20%; 
+      width: 20%;
       margin-left: 2em;
     }
   }
@@ -265,13 +261,11 @@ main {
     .row {
       flex: 1;
       .details {
-        
         padding: 2em;
         color: white;
-        h1{
-          font-size:3em;
+        h1 {
+          font-size: 3em;
           font-weight: bold;
-          
         }
         p {
           padding: 1em 0;
@@ -280,7 +274,7 @@ main {
         button {
           color: $Violet;
           background-color: white;
-          padding: .5em 3em;
+          padding: 0.5em 3em;
           font-size: 1.2em;
           margin-top: 1em;
           border-radius: 5em;
@@ -294,14 +288,12 @@ main {
         }
       }
       .social-icons {
-          
         justify-content: flex-end;
         align-items: flex-end;
-        display:flex;
+        display: flex;
         padding: 2em 3em;
 
         span {
-        @export 
           color: white;
           &:hover {
             color: $SoftMagenta;
