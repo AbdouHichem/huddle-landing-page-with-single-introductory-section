@@ -53,6 +53,7 @@ main {
     p {
       padding: 1em;
       font-size: 1em;
+      transition: all 0.5s ease;
     }
     button {
       color: $Violet;
@@ -193,10 +194,12 @@ main {
         h1{
           font-size:2em;
           font-weight: bold;
+          transition: all 0.2s ease;
         }
         p {
           padding: 1em 0;
           font-size: 1em;
+          transition: all 0.2s ease;
         }
         button {
           color: $Violet;
@@ -268,6 +271,7 @@ main {
         h1{
           font-size:3em;
           font-weight: bold;
+          
         }
         p {
           padding: 1em 0;
